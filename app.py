@@ -13,7 +13,7 @@ def hello_world():
 
 class Hello(Resource):
     def get(self, name):
-    return {"Hello":name}
+        return {"Hello":name}
 
 api.add_resource(Hello, '/hello/<name>')
 
